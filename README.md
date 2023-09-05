@@ -92,4 +92,48 @@ Please go to https://github.com/shliamin/songsMS-spring-boot
 
 9. Configuring Profiles for Limits Service
 
+10. Debugging Guide for Microservices
+
+11. Introduction to Currency Conversion & Exchange Microservices
+
+12. Setting up Currency Exchange Microservice
+
+13. URL and Response Structure for Currency Exchange Service
+
+14. Create a simple hard-coded currency exchange service
+
+15. Setting up Dynamic Port in the Response
+
+16. Configure JPA and Initialized Data
+
+17. Create a JPA Repository
+
+18. Setting up Currency Conversion Microservice
+
+19. Creating a service for currency conversion
+
+20. Invoking Currency Exchange from Currency Conversion Microservice
+
+21. Using Feign REST Client for Service Invocation
+
+22. Understand Naming Server and Setting up Eureka Naming Server
+
+23. Connect Currency Conversion & Currency Exchange Service
+   
+24. QuickStart by Importing Microservices
+
+25. Load Balancing with Eureka, Feign & Spring Cloud LoadBalancer
+
+26. Setting up Spring Cloud API Gateway
+
+27. Enabling Discovery Locator with Eureka for Spring Cloud Gateway
+
+28. Exploring Routes with Spring Cloud Gateway
+
+29. Implementing Spring Cloud Gateway Logging Filter
+
+30. Getting started with Circuit Breaker - Resilience4j
+
+31. Playing with Resilience4j - Retry and Fallback Methods
+
 
