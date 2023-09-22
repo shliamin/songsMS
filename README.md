@@ -3,6 +3,8 @@
 
 👨🏼‍💻 Efim Shliamin (Matrikelnummer: 573270)
 
+[The PowerPoint-Presentation](https://docs.google.com/presentation/d/1Pwfo1LEkJfByamYIwZjM3cPueTA-mqIvQlcZitfm3-M/edit?usp=sharing)
+
 💡 _You can use 	[the Talend API Tester](https://chrome.google.com/webstore/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm/related) (Google Chrome extension) as a REST API client to invoke, discover and test HTTP and REST APIs._
 
 💡 _We use [Swagger](https://swagger.io/) for developing and describing RESTful APIs. Go to http://localhost:8080/swagger-ui/index.html to try._
