@@ -5,6 +5,28 @@
 
 [The PowerPoint-Presentation](https://docs.google.com/presentation/d/1Pwfo1LEkJfByamYIwZjM3cPueTA-mqIvQlcZitfm3-M/edit?usp=sharing)
 
+-----
+Links for the Version 1 (Currency Exchange & Currency Conversion Services):
+
+Currency Exchange Service
+http://localhost:8000/currency-exchange/from/USD/to/INR
+
+Currency Conversion Service
+http://localhost:8100/currency-conversion/from/USD/to/INR/quantity/10
+http://localhost:8100/currency-conversion-feign/from/USD/to/INR/quantity/10
+
+Eureka
+http://localhost:8761/
+
+API GATEWAY
+
+http://localhost:8765/currency-exchange/from/USD/to/INR
+http://localhost:8765/currency-conversion/from/USD/to/INR/quantity/10
+http://localhost:8765/currency-conversion-feign/from/USD/to/INR/quantity/10
+http://localhost:8765/currency-conversion-new/from/USD/to/INR/quantity/10
+
+-----
+
 💡 _You can use 	[the Talend API Tester](https://chrome.google.com/webstore/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm/related) (Google Chrome extension) as a REST API client to invoke, discover and test HTTP and REST APIs._
 
 💡 _We use [Swagger](https://swagger.io/) for developing and describing RESTful APIs. Go to http://localhost:8080/swagger-ui/index.html to try._
