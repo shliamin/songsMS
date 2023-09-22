@@ -13,6 +13,12 @@
 
 Please go to https://github.com/shliamin/songsMS-spring-boot
 
+💡 _We use [Eureka](https://www.baeldung.com/spring-cloud-netflix-eureka) as a Registry/Discovery-Service. Go to http://localhost:8761/ to try._
+
+💡 _We use [Zipkin](https://zipkin.io) as a a distributed tracing system. Go to http://localhost:9411/ to try._
+
+💡 _We use [Docker](https://www.docker.com)._
+
 ![certificate](certificate-MS.jpg)
 
 
