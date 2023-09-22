@@ -138,4 +138,26 @@ Please go to https://github.com/shliamin/songsMS-spring-boot
 
 31. Playing with Resilience4j - Retry and Fallback Methods
 
+32. Playing with Docker Images and Containers
+
+33. Understanding Docker Architecture - Docker Client, Docker Engine
+   
+34. Launching Zipkin Container using Docker
+
+35. Connecting Currency Exchange Microservice with Zipkin
+
+36. Connecting Currency Conversion Microservice & API Gateway
+
+37. Creating Container Images for Currency Exchange Microservice
+
+38. Getting Started with Docker Compose
+
+39. Running Eureka Naming Server with Docker Compose
+
+40. Running Currency Conversion Microservice with Docker Compose
+
+41. Running Spring Cloud API Gateway with Docker Compose
+
+42. Running Zipkin with Docker Compose
+
 
