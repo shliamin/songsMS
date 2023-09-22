@@ -11,8 +11,10 @@ Links for the Version 1 (Currency Exchange & Currency Conversion Services):
 Currency Exchange Service
 http://localhost:8000/currency-exchange/from/USD/to/INR
 
-Currency Conversion Service
+Currency Conversion Services
+
 http://localhost:8100/currency-conversion/from/USD/to/INR/quantity/10
+
 http://localhost:8100/currency-conversion-feign/from/USD/to/INR/quantity/10
 
 Eureka
