@@ -3,24 +3,36 @@
 
 👨🏼‍💻 Efim Shliamin (Matrikelnummer: 573270)
 
-[The PowerPoint-Presentation](https://docs.google.com/presentation/d/1Pwfo1LEkJfByamYIwZjM3cPueTA-mqIvQlcZitfm3-M/edit?usp=sharing)
+📋 [The PowerPoint-Presentation](https://docs.google.com/presentation/d/1Pwfo1LEkJfByamYIwZjM3cPueTA-mqIvQlcZitfm3-M/edit?usp=sharing)
+
+⚙️ Testing: right-click on the project and select "Coverage As" > "JUnit Test"
 
 -----
-Links for the Version 1 (Currency Exchange & Currency Conversion Services):
+Important links:
 
-Currency Exchange Service
+
+**/auth:**
+http://localhost:8101/auth
+
+**/songs:**
+http://localhost:8002/songs
+
+**/songsLists**:
+http://localhost:8201/songsLists
+
+**Currency Exchange Service:**
 http://localhost:8000/currency-exchange/from/USD/to/INR
 
-Currency Conversion Services
+**Currency Conversion Services:**
 
 http://localhost:8100/currency-conversion/from/USD/to/INR/quantity/10
 
 http://localhost:8100/currency-conversion-feign/from/USD/to/INR/quantity/10
 
-Eureka
+**Eureka:**
 http://localhost:8761/
 
-API GATEWAY
+**API GATEWAY:**
 
 http://localhost:8765/currency-exchange/from/USD/to/INR
 
