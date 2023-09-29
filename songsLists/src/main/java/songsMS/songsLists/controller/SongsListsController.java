@@ -161,5 +161,36 @@ public class SongsListsController {
 
         return playlistResponse;
     }
+    
+    @PutMapping("/{id}")
+    public ResponseEntity<?> updatePlaylistName(@PathVariable Long id,
+                                                @RequestBody UpdatedPlaylistNameRequest updatedPlaylistNameRequest,
+                                                @RequestHeader("Authorization") String token) {
+
+        // Check if a playlist with the specified id exists
+        if (!playlistRepository.existsById(id)) {
+            ErrorResponse errorResponse = new ErrorResponse("Playlist not found", HttpStatus.NOT_FOUND.value());
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorResponse);
+        }
+
+        Auth auth = authRepository.findByToken(token);
+        Playlist playlist = playlistRepository.findById(id).orElse(null);
+
+        // Check if the user has permission to update this playlist
+        if (playlist == null || playlist.getUser().getId() != auth.getUser().getId()) {
+            ErrorResponse errorResponse = new ErrorResponse("You do not have permission to update this playlist", HttpStatus.FORBIDDEN.value());
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).body(errorResponse);
+        }
+
+        // Update only the playlist name
+        playlist.setName(updatedPlaylistNameRequest.getName());
+
+        // Save the updated playlist
+        playlistRepository.save(playlist);
+
+        return ResponseEntity.status(HttpStatus.OK).build();
+    }
+
+
 
 }
