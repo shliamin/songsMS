@@ -1,17 +1,14 @@
 package songsMS.songsLists.model;
 
-import lombok.Data;
-
 import jakarta.persistence.*;
-import lombok.NoArgsConstructor;
+
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @Entity
-@Data
 @Table(name = "playlists")
-@NoArgsConstructor
 public class Playlist {
 
     public Playlist(PlaylistRequest playlistRequest) {
@@ -62,9 +59,9 @@ public class Playlist {
     )
     private List<Song> songs = new ArrayList<>();
 
-	public Auth getUser() {
+	public User getUser() {
 		// TODO Auto-generated method stub
-		return null;
+		return user;
 	}
 
 	public long getId() {
@@ -82,8 +79,47 @@ public class Playlist {
 		return null;
 	}
 
-	public Song[] getSongs() {
+	public List<Song> getSongs() {
 		// TODO Auto-generated method stub
-		return null;
+		return songs;
 	}
+
+	public Playlist(int id, User user, String name, boolean isPrivate, List<Song> songs) {
+		super();
+		this.id = id;
+		this.user = user;
+		this.name = name;
+		this.isPrivate = isPrivate;
+		this.songs = songs;
+	}
+	
+	public Playlist() {
+		
+	}
+
+	@Override
+	public String toString() {
+		return "Playlist [id=" + id + ", user=" + user + ", name=" + name + ", isPrivate=" + isPrivate + ", songs="
+				+ songs + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id, isPrivate, name, songs, user);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Playlist other = (Playlist) obj;
+		return id == other.id && isPrivate == other.isPrivate && Objects.equals(name, other.name)
+				&& Objects.equals(songs, other.songs) && Objects.equals(user, other.user);
+	}
+	
+	
 }
