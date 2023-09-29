@@ -7,6 +7,41 @@
 
 ⚙️ Testing: right-click on the project and select "Coverage As" > "JUnit Test"
 
+💡 _We (can) use 	[the Talend API Tester](https://chrome.google.com/webstore/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm/related) (Google Chrome extension) as a REST API client to invoke, discover and test HTTP and REST APIs:_
+
+1. For **/auth** microservice:
+
+POST http://localhost:8101/auth
+
+Content-Type: application/json
+
+Body: {"userId": "jane", "password": "pass1234"} **or** Body: {"userId": "maxime", "password": "pass1234"} ➡️ 200 + _the unique token_ 
+
+In all other cases: ➡️ 401
+
+2. For **/songsLists** microservice:
+
+POST http://localhost:8201/auth
+
+Content-Type: application/json
+
+Body: {"userId": "jane", "password": "pass1234"} **or** Body: {"userId": "maxime", "password": "pass1234"} ➡️ 200 + _the unique token_ 
+
+In all other cases: ➡️ 401
+
+Then use _the unique token_ like this: 
+
+GET http://localhost:8201/songs
+
+Accept: application/json
+
+Authorisation: _the unique token_
+
+Correct token? ➡️ 200 + list of songs, otherwise ➡️ 401
+
+
+
+
 -----
 Important links:
 
