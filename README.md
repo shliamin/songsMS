@@ -39,8 +39,35 @@ Authorisation: _the unique token_
 
 Correct token? ➡️ 200 + list of songs, otherwise ➡️ 401
 
+**User holt sich die eigenen SongListen:**
 
+GET http://localhost:8201/songsLists?userId=maxime (⚠️ user maxime is previously authenticated & has _the unique token_)
 
+Accept: application/json
+
+Authorisation: _the unique token_
+
+➡️ 200 + list of songs for maxime 
+
+**User holt sich die SongListen von einer anderen Nutzerin:**
+
+GET http://localhost:8201/songsLists?userId=jane (⚠️ user maxime is previously authenticated & has _the unique token_)
+
+Accept: application/json
+
+Authorisation: _the unique token_
+
+➡️ 200 + list of songs for jane 
+
+**SongListen von nicht existirenden Nutzer:**
+
+GET http://localhost:8201/songsLists?userId=usergibtsnicht (⚠️ user maxime is previously authenticated & has _the unique token_)
+
+Accept: application/json
+
+Authorisation: _the unique token_
+
+➡️ 404 
 
 -----
 Important links:
